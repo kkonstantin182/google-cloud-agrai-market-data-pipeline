@@ -26,8 +26,6 @@ This pipeline is designed to:
 
 ## Architecture
 
-![Pipeline Architecture](docs/architecture.png)
-
 ### Components
 1. **Google Cloud Storage (GCS)** - Stores raw JSON data files.
 2. **BigQuery (BQ)** - Stores transformed and deduplicated data.
