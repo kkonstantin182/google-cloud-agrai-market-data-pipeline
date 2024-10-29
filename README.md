@@ -17,7 +17,7 @@ This project automates the collection, storage, and reporting of EU agricultural
 ## Overview
 
 This pipeline is designed to:
-- Fetch data on the 2nd day of each month from the [EU Agriculture Data Portal](https://agridata.ec.europa.eu/extensions/DataPortal/agricultural_markets.html).
+- Fetch data each month from the [EU Agriculture Data Portal](https://agridata.ec.europa.eu/extensions/DataPortal/agricultural_markets.html).
 - Store the data in a Google Cloud Storage bucket.
 - Transform and load the data into BigQuery for analysis.
 - Send a monthly email report using the Gmail API.
