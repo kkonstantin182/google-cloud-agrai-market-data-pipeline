@@ -48,13 +48,12 @@ This pipeline is designed to:
      - `year_month`: DATE
      - `tonnes`: FLOAT
      - `category`: STRING
-   - **Optimization:** Data excluding the current month is stored to minimize costs.
 
 ### 3. **Cloud Functions**
 
 - **Extract Function**
    - **Trigger**: HTTP request from Cloud Scheduler.
-   - **Frequency**: `0 0 2 * *` (2nd day of each month).
+   - **Frequency**: `0 0 2 * *`.
    - **Description**: Fetches data from the EU Agriculture Data Portal and saves it to `agridata_project_data`.
 
 - **Transform and Load Function**
@@ -87,8 +86,3 @@ This pipeline is designed to:
 | year_month  | DATE   | Year and month of production data |
 | tonnes      | FLOAT  | Production in 1000 tonnes         |
 | category    | STRING | Category (e.g., Bull, Bullock)    |
-
-
-## License
-
-This project is licensed under the MIT License.
